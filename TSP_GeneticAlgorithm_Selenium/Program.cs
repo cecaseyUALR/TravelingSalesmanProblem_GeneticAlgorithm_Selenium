@@ -13,7 +13,8 @@ namespace TSP_GeneticAlgorithm_Selenium
     {
         public static void Main(string[] args)
         {
-            System.IO.StreamReader file = new System.IO.StreamReader(@"C:\Users\Christian Casey\Desktop\cities.txt");
+            // change this filepath to fit your machine
+            System.IO.StreamReader file = new System.IO.StreamReader(@"C:\Users\Username\Desktop\cities.txt");
             List<List<string>> RoutesArray = RoutesTxtArray(file);
 
             Globals.ShortestTime = 999999;
