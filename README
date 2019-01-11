@@ -1,0 +1,52 @@
+The purpose of this program is to solve the Traveling Salesman's problem
+using a genetic algorithm and through interaction with google maps with
+Selenium WebDriver. 
+
+This was a final project I completed on my own in my Artificial Intelligence
+course after being tasked to create a project using an AI of our choice.
+
+	**CITIES TEXT FILE**
+The cities used in this program are read from a text file, so modification
+of the file-path within the .cs code is required for this to work on your machine.
+The first city in the text file will act as the city of origin, so it will
+automatically be added to the end of the routes (no need to add it yourself)
+
+The cities must be separated by a line break within the text file. It is
+recommended that you format the cities as such:
+'(city name), (state or province or country, etc.)'
+The cities text file must contain at least four cities
+example:
+Albuquerque, NM
+Denver, CO
+Boston, MA
+Sacramento, CA
+etc.
+
+	**SELENIUM WEBDRIVER**
+Selenium is what allows this program to interact with a webbrowser with
+your code alone. It can be used in other languages, but in this case, it
+is used within VS.NET.
+
+To download selenium within visual studio:
+ - ensure that you are in a Visual Studio C#/.NET project
+ - navigate at top of window: tools->Nuget Package Manager->Manage Nuget Packages for Solution...(click)
+ - Within the browse search window, search for "Selenium"
+ - Selenium.WebDriver should be the first result; select and install it
+ - Your project now has access to the code that allows you to interact with Google, Firefox, IE, etc!
+
+
+	**GECKO DRIVER**
+Go to the following site and download appropriate .zip:
+https://github.com/mozilla/geckodriver/releases
+
+Unzip into the project's debug folder. Ensure that geckodriver.exe is present.
+
+	**Windows.Systems.Forms**
+If the System.Windows.Forms namespace is causing an error, then
+you must add it as a reference within the solution explorer.
+Right click references -> add reference -> browse for System.Windows.Forms
+
+	**DISCLAIMER**
+This method of solving the TSP with google maps is relatively slow and susceptible
+to browser errors. If maximum efficiency is required, then use of 
+Google Distance Matrix API is suggested.
